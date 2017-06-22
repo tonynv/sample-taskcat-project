@@ -18,7 +18,7 @@ tests:
   taskcat-fail-json: 
     parameter_input: debug-input.json
     regions: 
-      - sa-east-1
+      - ca-central-1
     template_file: debug.template
   taskcat-pass-yaml: 
     parameter_input: debug-input.json

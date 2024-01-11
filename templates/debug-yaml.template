@@ -57,7 +57,7 @@ Resources:
             - "       send(event, context, 'SUCCESS', responseData)"
             - "       return token"
       Handler: index.handler
-      Runtime: python2.7
+      Runtime: python3.9
       Timeout: '5'
       Role:
         Fn::GetAtt:
@@ -87,8 +87,6 @@ Resources:
           - - Ref: AWS::StackId
             - RequestId
         LogicalResourceId: GenIDLogicalResourceId
-    DependsOn:
-    - GenID
 Outputs:
   ClusterID:
     Value:
